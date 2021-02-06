@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.pj.utils.so.*;
+import ${cfg.packagePath}.utils.so.*;
 <#if cfg.mybatisPlus>
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 </#if>

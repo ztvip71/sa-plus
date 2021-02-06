@@ -257,7 +257,7 @@ public class DbTable {
 		return getMkName().toLowerCase().replaceAll("_", GenCfgManager.cfg.packageUnderlineTo);
 	}
 	public String getPackagePath() {		// 完全限定名包名 [packagePath] 
-		return GenCfgManager.cfg.packagePath + "." + getPackageModules();
+		return GenCfgManager.cfg.packagePath+"."+ GenCfgManager.cfg.modulePackage + "." + getPackageModules();
 	}
 
 	// ---------- 转换成kebab-case形式 [kebabName] 【只读】

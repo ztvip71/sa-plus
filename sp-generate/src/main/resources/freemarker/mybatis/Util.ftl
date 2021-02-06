@@ -3,7 +3,7 @@ package ${t.packagePath};
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.pj.utils.sg.*;
+import ${cfg.packagePath}.utils.sg.*;
 <#if t.hasFo("date", "date-create", "date-update") >import java.util.*;
 </#if>
 

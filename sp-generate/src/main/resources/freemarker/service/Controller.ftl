@@ -7,9 +7,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import ${cfg.package_utils};
-import com.pj.project4sp.SP;
+import ${cfg.packagePath}.project4sp.SP;
 
-import com.pj.current.satoken.StpUserUtil;
+import ${cfg.packagePath}.current.satoken.StpUserUtil;
 <#if cfg.saTokenAuthWay == 1 >import cn.dev33.satoken.stp.StpUtil;
 <#else>import cn.dev33.satoken.annotation.SaCheckPermission;
 </#if>

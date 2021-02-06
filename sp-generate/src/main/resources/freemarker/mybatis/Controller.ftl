@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-import com.pj.utils.sg.*;
-import com.pj.utils.so.*;
-import com.pj.project4sp.SP;
+import ${cfg.packagePath}.utils.sg.*;
+import ${cfg.packagePath}.utils.so.*;
+import ${cfg.packagePath}.project4sp.SP;
 
-import com.pj.current.satoken.StpUserUtil;
+import ${cfg.packagePath}.current.satoken.StpUserUtil;
 <#if cfg.saTokenAuthWay == 1 >import cn.dev33.satoken.stp.StpUtil;
 <#else>import cn.dev33.satoken.annotation.SaCheckPermission;
 </#if>
