@@ -41,8 +41,8 @@ public class SpGenerateApplication {
 	        .setServerProjectName("sp-server")				// 服务端 - 项目名称 
 //	        .setServerProjectName("sp-com/sp-core")			// 服务端 - 项目名称 (sp-com多模块版填此格式)
 	        .setCodePath("src/main/java/")					// 服务端代码 - 存放路径 
-	        .setPackagePath( "com.pj.project")				// 服务端代码 - 总包名 
-	        .setPackage_utils("com.pj.utils.sg.*")			// 服务端代码 - util类包地址 
+	        .setPackagePath( "com.zbj")						// 服务端代码 - 总包名
+			.setModulePackage("project")					// 模块名
 	        .setAuthor("shengzhang")						// 服务端代码 - 代码作者 (一定要换成您的大名哦，哈哈)
 	        .setAdminProjectName("sp-admin")				// 后台管理 - 项目名称 
             .setAdminCodePath("sa-html/")					// 后台管理-代码存放目录 

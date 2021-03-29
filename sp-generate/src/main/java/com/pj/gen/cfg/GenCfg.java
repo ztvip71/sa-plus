@@ -23,9 +23,9 @@ public class GenCfg {
 	// 服务端相关 
 	public String serverProjectName = "sp-server";	 	// 服务端项目名称  
 	public String codePath = "src/main/java/"; // 代码路径
-	public String packagePath = "com.pj.project"; 		// 总包名 
-	public String package_utils = ""; // util包导包地址 
-	public String author = ""; 				// 生成的代码作者名字 
+	public String packagePath = "com.pj"; 		// 总包名
+	public String modulePackage = "";			// 模块名
+	public String author = ""; 				// 生成的代码作者名字
 
 	// 后台相关 
 	public String adminProjectName = "sp-admin";		// 后台管理项目名字 
@@ -222,15 +222,7 @@ public class GenCfg {
 		this.adminCodePath = adminCodePath;
 		return this;
 	}
-	public String getPackage_utils() {
-		return package_utils;
-	}
-	public GenCfg setPackage_utils(String package_utils) {
-		this.package_utils = package_utils;
-		return this;
-	}
 
-	
 	/**
 	 * @return apidocCodePath
 	 */
@@ -520,6 +512,13 @@ public class GenCfg {
 		this.modelAddLine = modelAddLine;
 		return this;
 	}
-	
 
+	public String getModulePackage() {
+		return modulePackage;
+	}
+
+	public GenCfg setModulePackage(String modulePackage) {
+		this.modulePackage = modulePackage;
+		return this;
+	}
 }
